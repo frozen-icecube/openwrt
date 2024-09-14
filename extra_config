@@ -1,10 +1,17 @@
 # Combine with qosmio's config this additional config
 
+# Target platform
+CONFIG_TARGET_qualcommax=y
+CONFIG_TARGET_qualcommax_ipq807x=y
+CONFIG_TARGET_qualcommax_ipq807x_DEVICE_linksys_mx4300=y
+
 # Kernel modules
 CONFIG_PACKAGE_kmod-fs-ext4=m
+CONFIG_PACKAGE_kmod-usb-storage=y
 CONFIG_PACKAGE_kmod-usb-storage-uas=m
 
 # Packages
+CONFIG_PACKAGE_block-mount=m
 CONFIG_PACKAGE_usbutils=m
 CONFIG_PACKAGE_parted=m
 CONFIG_PACKAGE_avahi-daemon-service-http=m
@@ -13,4 +20,29 @@ CONFIG_PACKAGE_adguardhome=m
 CONFIG_PACKAGE_docker=m
 CONFIG_PACKAGE_dockerd=m
 CONFIG_PACKAGE_docker-compose=m
+CONFIG_PACKAGE_luci=y
+CONFIG_PACKAGE_luci-ssl-openssl=y
+CONFIG_PACKAGE_luci-app-firewall=y
+CONFIG_PACKAGE_luci-app-opkg=y
+CONFIG_PACKAGE_luci-app-sqm=y
+CONFIG_PACKAGE_luci-app-statistics=y
+CONFIG_PACKAGE_luci-app-acme=y
+CONFIG_PACKAGE_luci-app-nlbwmon=y
+CONFIG_PACKAGE_luci-app-opkg=y
+CONFIG_PACKAGE_luci-app-sqm=y
+CONFIG_PACKAGE_luci-app-statistics=y
+CONFIG_PACKAGE_luci-app-watchcat=y
+CONFIG_PACKAGE_luci-proto-wireguard=y
 CONFIG_PACKAGE_luci-app-dockerman=m
+
+# Additional packages
+CONFIG_PACKAGE_iperf3=y
+CONFIG_PACKAGE_htop=y
+CONFIG_PACKAGE_curl=y
+CONFIG_PACKAGE_rsync=y
+CONFIG_PACKAGE_jq=y
+CONFIG_PACKAGE_pigz=y
+CONFIG_PACKAGE_tar=y
+CONFIG_PACKAGE_tcpdump=y
+
+CONFIG_HTOP_LMSENSORS=n
