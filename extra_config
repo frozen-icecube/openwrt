@@ -1,0 +1,16 @@
+# Combine with qosmio's config this additional config
+
+# Kernel modules
+CONFIG_PACKAGE_kmod-fs-ext4=m
+CONFIG_PACKAGE_kmod-usb-storage-uas=m
+
+# Packages
+CONFIG_PACKAGE_usbutils=m
+CONFIG_PACKAGE_parted=m
+CONFIG_PACKAGE_avahi-daemon-service-http=m
+CONFIG_PACKAGE_avahi-daemon-service-ssh=m
+CONFIG_PACKAGE_adguardhome=m
+CONFIG_PACKAGE_docker=m
+CONFIG_PACKAGE_dockerd=m
+CONFIG_PACKAGE_docker-compose=m
+CONFIG_PACKAGE_luci-app-dockerman=m
