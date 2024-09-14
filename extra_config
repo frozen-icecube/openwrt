@@ -6,20 +6,20 @@ CONFIG_TARGET_qualcommax_ipq807x=y
 CONFIG_TARGET_qualcommax_ipq807x_DEVICE_linksys_mx4300=y
 
 # Kernel modules
-CONFIG_PACKAGE_kmod-fs-ext4=m
+CONFIG_PACKAGE_kmod-fs-ext4=y
 CONFIG_PACKAGE_kmod-usb-storage=y
-CONFIG_PACKAGE_kmod-usb-storage-uas=m
+CONFIG_PACKAGE_kmod-usb-storage-uas=y
 
 # Packages
-CONFIG_PACKAGE_block-mount=m
-CONFIG_PACKAGE_usbutils=m
-CONFIG_PACKAGE_parted=m
-CONFIG_PACKAGE_avahi-daemon-service-http=m
-CONFIG_PACKAGE_avahi-daemon-service-ssh=m
-CONFIG_PACKAGE_adguardhome=m
-CONFIG_PACKAGE_docker=m
-CONFIG_PACKAGE_dockerd=m
-CONFIG_PACKAGE_docker-compose=m
+CONFIG_PACKAGE_block-mount=y
+CONFIG_PACKAGE_usbutils=y
+CONFIG_PACKAGE_parted=y
+CONFIG_PACKAGE_avahi-daemon-service-http=y
+CONFIG_PACKAGE_avahi-daemon-service-ssh=y
+CONFIG_PACKAGE_adguardhome=y
+CONFIG_PACKAGE_docker=y
+CONFIG_PACKAGE_dockerd=y
+CONFIG_PACKAGE_docker-compose=y
 CONFIG_PACKAGE_luci=y
 CONFIG_PACKAGE_luci-ssl-openssl=y
 CONFIG_PACKAGE_luci-app-firewall=y
