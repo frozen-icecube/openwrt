@@ -437,7 +437,7 @@ function device_extended_features(data, flag) {
 }
 
 function device_capabilities(phy) {
-	let idx = +substr(phy, 3, 1);;
+	let idx = +fs.readfile(`/sys/class/ieee80211/${phy}/index`);
 	phy = nl80211.request(nl80211.const.NL80211_CMD_GET_WIPHY, nl80211.const.NLM_F_DUMP, { wiphy: idx, split_wiphy_dump: true });
 	if (!phy)
 		return;
@@ -544,6 +544,8 @@ export function setup(data) {
 
 	if (data.config.num_global_macaddr)
 		append('\n#num_global_macaddr', data.config.num_global_macaddr);
+	if (data.config.macaddr_base)
+		append('\n#macaddr_base', data.config.macaddr_base);
 
 	for (let k, interface in data.interfaces) {
 		if (interface.config.mode != 'ap')
