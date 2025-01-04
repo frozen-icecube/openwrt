@@ -1,0 +1,44 @@
+CONFIG_TARGET_qualcommax=y
+CONFIG_TARGET_qualcommax_ipq807x=y
+CONFIG_TARGET_qualcommax_ipq807x_DEVICE_linksys_mx4300=y
+# Kernel modules
+CONFIG_PACKAGE_kmod-fs-ext4=y
+CONFIG_PACKAGE_kmod-fs-vfat=y
+CONFIG_PACKAGE_kmod-fs-f2fs=y
+CONFIG_PACKAGE_kmod-fs-ntfs3=y
+CONFIG_PACKAGE_kmod-usb-storage=y
+CONFIG_PACKAGE_kmod-usb-storage-uas=y
+# Packages
+CONFIG_PACKAGE_block-mount=y
+CONFIG_PACKAGE_usbutils=y
+CONFIG_PACKAGE_parted=y
+CONFIG_PACKAGE_avahi-daemon-service-http=y
+CONFIG_PACKAGE_avahi-daemon-service-ssh=y
+CONFIG_PACKAGE_adguardhome=y
+#CONFIG_PACKAGE_docker=y
+#CONFIG_PACKAGE_dockerd=y
+#CONFIG_PACKAGE_docker-compose=y
+CONFIG_PACKAGE_ddns-scripts=y
+CONFIG_PACKAGE_ddns-scripts-noip=y
+CONFIG_PACKAGE_ca-bundle=y
+CONFIG_PACKAGE_luci=y
+CONFIG_PACKAGE_luci-ssl-openssl=y
+CONFIG_PACKAGE_wpad-mesh-openssl=y
+CONFIG_PACKAGE_wpad-basic-mbedtls=n
+CONFIG_PACKAGE_luci-app-firewall=y
+CONFIG_PACKAGE_luci-app-opkg=y
+#CONFIG_PACKAGE_luci-app-sqm=y
+CONFIG_PACKAGE_luci-app-opkg=y
+#CONFIG_PACKAGE_luci-app-watchcat=y
+CONFIG_PACKAGE_luci-proto-wireguard=y
+#CONFIG_PACKAGE_luci-app-dockerman=y
+CONFIG_PACKAGE_luci-app-ddns=y
+# Additional packages
+CONFIG_PACKAGE_iperf3=y
+CONFIG_PACKAGE_htop=y
+CONFIG_PACKAGE_curl=y
+#CONFIG_PACKAGE_rsync=y
+#CONFIG_PACKAGE_jq=y
+#CONFIG_PACKAGE_pigz=y
+CONFIG_PACKAGE_tar=y
+CONFIG_PACKAGE_tcpdump=y
