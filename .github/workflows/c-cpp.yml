@@ -26,13 +26,14 @@ jobs:
                       git \
                       libncurses-dev \
                       libssl-dev \
-                      python3-distutils \
+                      #python3-distutils \
                       rsync \
                       unzip \
                       zlib1g-dev \
                       file \
                       wget && \
                   sudo apt-get clean
+                  python3 -m pip install setuptools
             - name: Checkout
               uses: actions/checkout@v4
             - name: Update feeds
